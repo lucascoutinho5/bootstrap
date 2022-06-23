@@ -1,11 +1,33 @@
 #cards{
-	margin-top:25px;
-	background-color:#4F4F4F;
-   color:	#6495ED;
+margin-top:25px;
+margin-bottom:2%;
  
 }
 
-.bg-card{
-background-color:#363636;
-border-radius:25px;
+
+
+body{
+background-color:#6BFFEB;
+	
+}
+.editar-card{
+background-color:#efefef;
+padding:5%;
+margin-top:10%;
+margin-bottom:10%;
+	
+}
+.efeito-card{
+transition:transform 1s;	
+
+	
+}
+.efeito-img{
+transition:transform 1s;	
+	
+}
+
+.efeito-img:hover{
+transform:scale(1.2) rotateY(360deg);
+cursor:pointer;
 }
