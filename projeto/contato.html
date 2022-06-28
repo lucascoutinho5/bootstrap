@@ -6,13 +6,15 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="#">
-				<img src="img/hg.jpeg" alt="hg iphone" width="75" height="75">
+				<img src="img/incriveis.png" alt="hg iphone" width="75" height="75">
 			</a>
 			
 			<div class="collapse navbar-collapse">
@@ -28,7 +30,90 @@
 		</div>
 	
 	</nav>
+<section id="fale-conosco">
+	<div class="container">
+	<div class="row">
+	<div class="col-12">
+	<h3 class="display-5">fale conosco</h3>
+	</div>
+	</div>
+
+
+		<div class="row">
+			<div class="col-12">
+				<form>
+					<label for="nome-completo" class="form-label">digite seu nome: </label>
+					<input type="text" class="form-control" id="nome-completo"  placeholder="ex.:jose da silva" required>
+					<p class="form-text">digite seu nome completo neste campo <p>
+					
+
+
+					<label for="email" class="form-label">digite seu email: </label>
+					<input type="text" class="form-control" id="email" placeholder="email@.com" required>
+					<p class="form-text">digite seu email neste campo <p>
+					
+
+
+					<label for="telefone" class="form-label">digite seu telefone: </label>
+					<input type="text" class="form-control" id="fone" placeholder="00 00000-0000" required>
+					<p class="form-text">digite seu telefone completo neste campo <p>
+
+
+
+					<label for="telefone" class="form-label">digite seu estado: </label>
+					<input type="text" class="form-control" id="estado" placeholder="estado" required>
+					<p class="form-text">digite seu estado neste campo <p>
+
+
+
+						<label for="telefone" class="form-label">digite seu cidade: </label>
+						<input type="text" class="form-control" id="cidade" placeholder="cidade"required>
+						<p class="form-text">digite sua cidade neste campo <p>
+						<label for="motivo-contato" class="form-label">motivo do contato</label>
+						<select class="form-select" id="motivo-contato">
+							<option>fale conosco</option>
+							<option>reclamacao</option>
+							<option>sugestao</option>
+							<option>elogiar a empresa</option>
+						</select>
+						<label form="caixa-texto" class="form-labeel">olà tudo bem </label>
+						<textarea class="form-control" id="caixa-texto" rows="3"></textarea>
+						<!-- sobre a aula js, para receber o valor depos de digitar, usa-se "onclick" e atribui o valor da funcao.-->
+						<button type="button" onclick="validarFormulario()" class="btn btn-primary">enviar</button>
+				</form>
+			</div>
+		 </div>
+	</div>                                       
+</section>
+<footer id="rodape">	
+	<div class="container">
+		<div class="row">
+			<div class="col-4">
+				<img src="img/disney.logo.png" id="incriveis"><span class="text-muted ">&copy;2022 programacao web</span>
+			</div>
+			<div class="col-4">
+				<ul class="nav justify-content-center">
+					<li class="nav-item"><a class="nav-link text-muted" href="#">inicio</a></li>
+					<li class="nav-item"><a class="nav-link text-muted" href="#">sobre</a></li>
+					<li class="nav-item"><a class="nav-link text-muted" href="#">contato</a></li>
+					<li class="nav-item"><a class="nav-link text-muted" href="#">duvidas</a></li>
+				
+				</ul>
+			</div>
+			<div class="col-4 text-end">
+				<img src="img/twitter.png" alt="twitter">
+				<img src="img/logo.inst.png" alt="instagram">
+				<img src="img/face.png" alt="facebook">
+			</div>
+		
+		</div>
 	
-	<script type="text/javascrip" src="res/bootstrap/js/bootstrap.js"></script>
+	</div>
+
+</footer>
+
+	
+	<script type="text/javascript" src="res/bootstrap/js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>

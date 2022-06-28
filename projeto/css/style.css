@@ -31,3 +31,12 @@ transition:transform 1s;
 transform:scale(1.2) rotateY(360deg);
 cursor:pointer;
 }
+#rodape{
+background-image: linear-gradient(to right,#6A5ACD,	#6959CD,#00FFFF);
+}
+#incriveis{
+width:100px;
+heigth:100px;
+
+
+}
