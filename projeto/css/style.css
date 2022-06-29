@@ -7,7 +7,8 @@ margin-bottom:2%;
 
 
 body{
-background-color:#6BFFEB;
+background-color:#5956FF;
+
 	
 }
 .editar-card{
@@ -37,6 +38,37 @@ background-image: linear-gradient(to right,#6A5ACD,	#6959CD,#00FFFF);
 #incriveis{
 width:100px;
 heigth:100px;
+}
+input:focus, textarea:focus{
+	
+	border-color: "blue" !important;
+	
+}
 
+input:valid, textarea:valid{
+	border-color:#17E61F;
+}
+
+input:invalid, textarea:invalid{
+	border-color:"red";
+}
+
+#titulo{
+	margin-top:100px;
+	margin-bottom:100px;
+}
+.subtitulo{
+	
+	margin-bottom:50px;
+}
+#sublinhado{
+text-decoration:underline #FF9A03;
+;	
+	
+}
+
+#senai{
+	width:500px;
+	heigth:500px;
 
 }
