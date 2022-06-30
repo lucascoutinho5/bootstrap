@@ -19,13 +19,20 @@
 			
 			<div class="collapse navbar-collapse">
 				<div class="navbar-nav">
-					<a class="nav-link " href="index.html">inicio</a>
-					<a class="nav-link" href="noticias.html">noticias</a>
-					<a class="nav-link active" href="contato.html">contato</a>
-					<a class="nav-link" href="sobre.html">sobre</a>
+					<div class="btn-group" role="group" aria-label="basic example">
+						<button type="button" class="btn btn-secondary"><a class="nav-link " href="index.html">inicio</button></a>
+						<button type="button" class="btn btn-secondary"><a class="nav-link" href="noticias.html">noticias</button></a>
+						<button type="button" class="btn btn-secondary"><a class="nav-link active" href="contato.html">contato</button></a>
+						<button type="button" class="btn btn-secondary"><a class="nav-link" href="sobre.html">sobre</button></a>
+					</div>
 				</div>
 			
 			</div>
+			<form class="d-flex text-end" role="search">
+						<input class="form-control me-2" type="search" placeholder="pesquisa" >
+						<button class="btn btn-light" type="submit">pesquisar</button>
+					
+			</form>
 			
 		</div>
 	
@@ -43,34 +50,34 @@
 			<div class="col-12">
 				<form>
 					<label for="nome-completo" class="form-label">digite seu nome: </label>
-					<input type="text" class="form-control " id="nome-completo"  placeholder="ex.:jose da silva" required>
+					<input type="text" class="form-control shadow  bg-body roudend" id="nome-completo"  placeholder="ex.:jose da silva" required>
 					<p class="form-text">digite seu nome completo neste campo <p>
 					
 
 
-					<label for="email" class="form-label">digite seu email: </label>
-					<input type="text" class="form-control " id="email" placeholder="email@.com" required>
+					<label for="email" class="form-label ">digite seu email: </label>
+					<input type="text" class="form-control shadow   bg-body roudend" id="email" placeholder="email@.com" required>
 					<p class="form-text">digite seu email neste campo <p>
 					
 
 
 					<label for="telefone" class="form-label">digite seu telefone: </label>
-					<input type="text" class="form-control " id="fone" placeholder="00 00000-0000" required>
+					<input type="tel" class="form-control shadow   bg-body roudend" id="fone" onkeyup="mascara('##-#####-####',this,event,true)" maxlength="1" placeholder="00 00000-0000" >
 					<p class="form-text">digite seu telefone completo neste campo <p>
 
 
 
 					<label for="telefone" class="form-label">digite seu estado: </label>
-					<input type="text" class="form-control" id="estado" placeholder="estado" required>
+					<input type="text" class="form-control shadow   bg-body roudend" id="estado" placeholder="estado" required>
 					<p class="form-text">digite seu estado neste campo <p>
 
 
 
 						<label for="telefone" class="form-label">digite seu cidade: </label>
-						<input type="text" class="form-control " id="cidade" placeholder="cidade"required>
+						<input type="text" class="form-control shadow   bg-body roudend" id="cidade" placeholder="cidade"required>
 						<p class="form-text">digite sua cidade neste campo <p>
 						<label for="motivo-contato" class="form-label">motivo do contato</label>
-						<select class="form-select" id="motivo-contato">
+						<select class="form-select shadow  bg-body roudend" id="motivo-contato">
 							<option>fale conosco</option>
 							<option>reclamacao</option>
 							<option>sugestao</option>
@@ -115,5 +122,6 @@
 	
 	<script type="text/javascript" src="res/bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
+	<script src="mascara.min.js"></script>
 </body>
 </html>

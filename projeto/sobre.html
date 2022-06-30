@@ -9,7 +9,8 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body  >
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="#">
@@ -18,13 +19,28 @@
 			
 			<div class="collapse navbar-collapse">
 				<div class="navbar-nav">
-					<a class="nav-link " href="index.html">inicio</a>
-					<a class="nav-link" href="noticias.html">noticias</a>
-					<a class="nav-link" href="contato.html">contato</a>
-					<a class="nav-link active" href="sobre.html">sobre</a>
+					<div class="btn-group" role="group" aria-label="basic example">
+						<button type="button" class="btn btn-secondary"><a class="nav-link" href="index.html">inicio</button></a>
+						<button type="button" class="btn btn-secondary"><a class="nav-link" href="noticias.html">noticias</button></a>
+						<button type="button" class="btn btn-secondary"><a class="nav-link" href="contato.html">contato</button></a>
+						<button type="button" class="btn btn-secondary"><a class="nav-link active" href="sobre.html">sobre</button></a>
+					</div>
 				</div>
 			
 			</div>
+			<div class="dropdown">
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">sobre</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+								<li><a class="dropdown-item" href="#">contato</a></li>
+								<li><a class="dropdown-item" href="#">contratacao</a></li>
+								<li><a class="dropdown-item" href="#">trabalhe conosco</a></li>
+							</ul>
+					</div>
+			<form class="d-flex text-end" role="search">
+						<input class="form-control me-2" type="search" placeholder="pesquisa" >
+						<button class="btn btn-light" type="submit">pesquisar</button>
+					
+			</form>
 			
 		</div>
 	

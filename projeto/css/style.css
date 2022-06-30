@@ -7,7 +7,7 @@ margin-bottom:2%;
 
 
 body{
-background-color:#5956FF;
+background-color:#F7F1F1;
 
 	
 }
@@ -50,7 +50,7 @@ input:valid, textarea:valid{
 }
 
 input:invalid, textarea:invalid{
-	border-color:"red";
+	border-color:#C7130F;
 }
 
 #titulo{
@@ -71,4 +71,10 @@ text-decoration:underline #FF9A03;
 	width:500px;
 	heigth:500px;
 
+}
+
+.parag{
+margin-left:92%;	
+margin-bottom:-10px;
+color:#FCD812;
 }
