@@ -61,7 +61,7 @@ input:invalid, textarea:invalid{
 	
 	margin-bottom:50px;
 }
-#sublinhado{
+.sublinhado{
 text-decoration:underline #FF9A03;
 ;	
 	
@@ -77,4 +77,34 @@ text-decoration:underline #FF9A03;
 margin-left:92%;	
 margin-bottom:-10px;
 color:#FCD812;
+}
+.senai-card{
+padding:30px;
+margin-top:96px;
+margin-bottom:96px;
+margin-left:80px;
+margin-right:80px;
+width:300px;
+max-height:500px;
+	
+}
+.img-card{
+	width:250px;
+	height:250px;
+}
+#botao{
+	background-color:#FCC530;
+	color:#767676;
+	
+	border-radius:15px;
+	text-align:center;
+	margin-left:66%;
+	width:250px;
+	box-shadow:4px 4px #767676;
+	transition:transform 1s;
+
+}
+#botao:hover{
+	transform:scale(1.2);
+	
 }
