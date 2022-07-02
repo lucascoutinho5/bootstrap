@@ -108,3 +108,76 @@ max-height:500px;
 	transform:scale(1.2);
 	
 }
+.menuContainer{
+background-color:#bbb;
+width:300px;
+padding	: 15px 0px;
+
+}
+
+.menuContainer li a{
+	padding:12px;
+	text-decoration:none;
+	color:#000;
+	display: block;
+}
+.menuContainer h2{
+	padding-left:10px;
+}
+
+#pesquisa{
+	width:100%;
+	font-size:18px;
+	padding:11px;
+	border:1px solid #ddd;
+	
+}
+#menu{
+	
+	list-style-type:none;
+	padding:0px;
+	margin:0px;
+	
+}
+
+#menu li a:hover{
+	background-color:#eee;
+}
+
+#btn-senai2{
+border: 2px solid #FFBE40;
+font-size: .8rem;
+color:#9B979F;
+padding: 1rem	2rem;
+margin:0.5rem 0;
+border-radius: 5px;
+	
+}
+
+#btn-senai2:hover{
+	box-shadow: 5px 5px 5px 5px #CED5F5;
+	transition:transform 0.75s;
+}
+#btn-senai{
+	background-color:#FFBE40;
+	border:2px solid #FFBE40;
+	padding: 1rem	2rem;
+	border-radius: 5px;
+	font-size: .8rem;
+	margin:0.5rem 0;
+
+	
+}
+#btn-senai:hover{
+	box-shadow: 5px 5px 5px 5px #CED5F5;
+	transition:transform 0.75s;
+
+}
+
+.cd-senai{
+	margin-top:100px;
+	margin-bottom:100px;
+	
+}
+
+
