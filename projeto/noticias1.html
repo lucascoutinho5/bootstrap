@@ -6,11 +6,14 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<title></title>
 	<link rel="stylesheet" href="res/bootstrap/css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<body id="body1">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 		<div class="container">
 			<a class="navbar-brand" href="#">
 				<img src="https://al.senai.br/wp-content/themes/portal_sesisenai/assets/img/senai.png" alt="hg iphone" width="75" height="75">
@@ -20,7 +23,7 @@
 				<div class="navbar-nav">
 					<div class="btn-group" role="group" aria-label="basic example">
 						<button type="button" class="btn btn-secondary"><a class="nav-link " href="index.html">inicio</button></a>
-						<button type="button" class="btn btn-secondary"><a class="nav-link active" href="noticias.html">noticias</button></a>
+						<button type="button" class="btn btn-secondary"><a class="nav-link" href="noticias.html">noticias</button></a>
 						<button type="button" class="btn btn-secondary"><a class="nav-link" href="contato.html">contato</button></a>
 						<button type="button" class="btn btn-secondary"><a class="nav-link" href="sobre.html">sobre</button></a>
 					</div>
@@ -28,11 +31,11 @@
 			
 			</div>
 			<div class="dropdown">
-						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">sobre</button>
+						<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">mais</button>
 							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-								<li><a class="dropdown-item" href="#">contato</a></li>
-								<li><a class="dropdown-item" href="#">contratacao</a></li>
-								<li><a class="dropdown-item" href="#">trabalhe conosco</a></li>
+								<li><a class="dropdown-item" href="cadastro.html">login</a></li>
+								<li><a class="dropdown-item" href="login.html">cadastro</a></li>
+								<li><a class="dropdown-item active" href="noticias1.html">curiosiades</a></li>
 							</ul>
 					</div>
 			<form class="d-flex text-end" role="search">
@@ -62,66 +65,80 @@
 		</div>
 		<div>
 			<p >Uma vez por mês, o pátio da Mineração Vale Verde, no município de Craíbas, se transforma em uma feira ao ar livre, onde um grupo de mulheres, doceiras e salgadeiras da Associação Juntos Somos Fortes, expõem e vendem deliciosos produtos aos colaboradores da empresa. A última edição da Feira Comunitária, onde também são vendidos artigos do campo como ovos, aconteceu na última sexta-feira, 3.</p>
-			<p>São produtos como bolos, tortas e doces diferenciados, produzidos por empreendedoras capacitadas pelo Serviço Nacional de Aprendizagem Industrial (Senai), no âmbito do projeto Mulheres Empreendedoras, uma iniciativa da MVV. “Estou amando o curso, aprendendo mais do que eu já sabia um pouquinho e estou me aprimorando mais ainda”, disse Genise Leandro da Silva, uma das vendedoras.</p>
-			<p>A ideia do projeto é expandir mercados para estas mulheres, promovendo a independência e o empoderamento, por meio da geração de renda. “O projeto dará a essas mulheres empreendedoras a oportunidade de atrair outros públicos consumidores, ao proporcionar uma capacitação para que possam produzir com um conhecimento mais técnico, levando essa produção para ser vendida na própria cidade e, futuramente, em outros municípios”, explica a consultora técnica do Senai, Luciane Jerônimo.</p>
-			<p>Atualmente, a ação, que fortalece a agricultura e o empreendedorismo feminino, realiza o curso de confeitaria. Porém, estão programadas outras capacitações em Técnicas de Congelamento, Fabricação de Salgados, de Panetone e Chocotone, de Tortas Decoradas e de Produtos com Frutas.</p>
-			<p>Além disso, o grupo receberá consultorias do Senai em Custo de Produção, Desenvolvimento de Design de Rótulos, Elaboração de Fichas Técnicas de Produtos, Rotulagem de Alimentos e Informação Nutricional.</p>
-			<p>O projeto da MVV, com a parceria do Senai, promete transformar realidades na região, deixando um legado positivo. “[O projeto] nasceu de uma necessidade da própria comunidade, das mulheres trabalharem e desenvolverem algo novo, partindo do que elas já tinham conhecimento”, explica a analista de Sustentabilidade e Relações Institucionais da Mineração Vale Verde, Gyslane Chaves.</p>
-			<p>Este é um dos vários projetos sociais da MVV que fomentam a integração social no território onde a empresa atua, explica o coordenador de Comunicação, Relações de Comunidades e Institucionais da MVV, Mário Lima. “É muito importante a parceria da gente com o Senai, porque é uma instituição de muita credibilidade, que soma aos esforços para que nós possamos alcançar os nossos objetivos de formação profissional  com ênfase no empreendedorismo para as mulheres empreendedoras e demais projetos dessa envergadura na carteira de projetos sociais da Mineração Vale Verde”, concluiu.</p>
+			
 		</div>    
 	
 	</div>
 
 </section>
-<section  class="container-fluid "  style="padding:80px;" >
-	<div class="row">
-		<div class="col-12">
-			<h3 style="font-size:36px;font-family:Gotham;color:#001834;">Artigos relacionados</h3>
+<!-- como criar card-slid -->
+<section>
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<h1>Mais Curiosidades<h1>
+			</div>
+			<div class="col-12">
+				<div class="slider owl-carousel" >
+	<a href="#"><div class="card card-1">
+					<div class="img"><img class="img-1" src="https://al.senai.br/wp-content/uploads/2021/11/Tecnicas-de-soldagem.jpg" alt=""></div>
+					<div class="content">
+						<div class="title">TÉCNICA DE SOLDAGEM</div>
+					
+						<p>O Curso de Aperfeiçoamento Profissional em Técnicas de Soldagem do SENAI Alagoas busca preparar os alunos para executar o planejamento...</p>
+						<div class="btn">
+							<button>confira</button>
+						</div>
+					</div>
+				
+				</div></a>
+	<a href="#"><div class="card card-1">
+					<div class="img"><img class="img-1" src="https://al.senai.br/wp-content/uploads/2021/11/Condutores-de-transporte-escolar.jpg" alt=""></div>
+					<div class="content">
+						<div class="title">TRANSPORTE ESCOLAR </div>
+						
+						<p>O objetivo do curso de complementação para Condutores de Transporte Escolar do SENAI Alagoas é habilitar profissionais do transporte escolar para reconhecer... </p>
+						<div class="btn">
+							<button>confira</button>
+						</div>
+					</div>
+				
+				</div></a>
+	<a href="#"><div class="card card-1">
+					<div class="img"><img class="img-1" src="https://al.senai.br/wp-content/uploads/2021/11/Condutores-de-veiculo-de-carga-indivisivel.jpg" alt=""></div>
+					<div class="content">
+						<div class="title">VEÍCULO DE CARGA in...</div>
+						
+						<p>O objetivo do curso de complementação para Condutores de Veículo de Carga Indivisível do SENAI Alagoas é habilitar profissionais do transporte de cargas par</p>
+						<div class="btn">
+							<button>confira</button>
+						</div>
+					</div>
+				
+				</div></a>
+	<a href="#"><div class="card card-1">
+					<div class="img"><img class="img-1" src="https://al.senai.br/wp-content/uploads/2022/03/Instalacao-e-manutencao-de-ar-condicionados-split.webp" alt=""></div>
+					<div class="content">
+						<div class="title">INSTALAÇÃO E MANU... </div>
+					
+						<p>O Curso de Aperfeiçoamento Profissional em Instalação e Manutenção de Ar-Condicionado Split do SENAI Alagoas busca preparar os alunos para definir de...</p>
+						<div class="btn">
+							<button>confira</button>
+						</div>
+					</div>
+				
+				</div></a>
+				
+			</div>
+			
+			
+			
+			
+			
+			</div>
 		
 		</div>
-	</div>
-	<div class="row">
-	   <div class="col-3">
-			<div class=" senai-card">
-				<img src="https://al.senai.br/wp-content/uploads/2022/05/3005-escola-eletricistas-30.jpg" class="card-img-top img-card" alt="#">
-				<div class="card-body">
-					<h4>senai capacita primeira turma da escola de eletricistas da equatorial</h4>
-					<p>os vinte e cinco primeiros alinos da escola de</p>
-				
-				</div>
-			</div>
-		</div>
-		<div class="col-3">
-			<div class=" senai-card">
-				<img src="https://al.senai.br/wp-content/uploads/2022/05/2.jpg" class=" img-card" alt="#">
-				<div class="card-body">
-					<h4>alagoas precisa qualificar 58 mil  trabalhadores em ocupacooes industriais até 2025</h4>
-					<p>até 2025, o estado de Alagoas precisará quali</p>
-				
-				</div>
-			</div>
-		</div>
-		<div class="col-3">
-			<div class=" senai-card">
-				<img src="https://al.senai.br/wp-content/uploads/2022/05/0905-seminario-usinas-3.jpeg" class=" img-card" alt="#">
-				<div class="card-body">
-					<h4>aprendizes expõem conhecimentos adquiridos em sala de aula no senai</h4>
-					<p>os jovens aprendizes que fazem o curso de assistencia</p>
-				
-				</div>
-			</div>
-		</div>
-		<div class="col-3">
-			<div class=" senai-card">
-				<img src="https://al.senai.br/wp-content/uploads/2022/04/WhatsApp-Image-2022-04-27-at-20.56.10.jpeg " class="img-card" alt="#">
-				<div class="card-body">
-					<h4>cursos do senai/AL serão referencia para avaliação nacional de estudantes</h4>
-					<p>os cursos técnicos das áreas de Petroquimica</p>
-				
-				</div>
-			</div>
-		</div>
-		<a href="sobre.html" style="text-decoration:none;color:#767676;"><button type="button" class=" rounded btn btn-warning " id="botao">todas as noticias</a></button>
+			
 	</div>
 </section>
 <footer id="rodape">	
@@ -155,5 +172,15 @@
 	<script type="text/javascript" src="res/bootstrap/js/bootstrap.js"></script>
 	<script type="text/javascript" src="js/script.js"></script>
 	<script type="text/javascript" src="res/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script>
+		$(".slider").owlCarousel({
+			loop:true,
+			autoplay:true,
+			autoplayTimeout:2000, //2000ms=2s;
+			outoplayHouverPause:true,
+			
+		})
+	
+	</script>
 </body>
 </html>
