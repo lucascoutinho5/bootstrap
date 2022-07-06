@@ -16,6 +16,7 @@ background-color:#efefef;
 padding:5%;
 margin-top:10%;
 margin-bottom:10%;
+height:400px;
 	
 }
 .efeito-card{
@@ -23,15 +24,25 @@ transition:transform 1s;
 
 	
 }
-.efeito-img{
+
+.efeito-img{                                                            
 transition:transform 1s;	
 	
 }
 
 .efeito-img:hover{
-transform:scale(1.2) rotateY(360deg);
+transform:scale(1.1) /*rotateY(360deg)*/;;
 cursor:pointer;
 }
+.col-efeito{                                                            
+transition:transform 1s;	
+
+}
+.col-efeito:hover{                                                            
+	transform:scale(1.1);	
+	
+}
+
 #rodape{
 background-image: linear-gradient(to right,#6A5ACD,	#6959CD,#00FFFF);
 }
@@ -50,7 +61,7 @@ input:valid, textarea:valid{
 }
 
 input:invalid, textarea:invalid{
-	border-color:#C7130F;
+	border-color:#C7130F !important;
 }
 
 #titulo{
@@ -61,7 +72,7 @@ input:invalid, textarea:invalid{
 	
 	margin-bottom:50px;
 }
-.sublinhado{
+.#sublinhado{
 text-decoration:underline #FF9A03;
 ;	
 	
@@ -177,14 +188,16 @@ border-radius: 5px;
 .cd-senai{
 	margin-top:100px;
 	margin-bottom:100px;
+
 	
 }
+
 /*
 css para estilizar o card-slider
 }*/
 a{
 text-decoration:none;
-color:black;
+color:#5C606E;
 	
 }
 .slider{
@@ -260,3 +273,4 @@ text-align:center;
 	  
   }
 /* fim da estilizacao do card-slide */
+

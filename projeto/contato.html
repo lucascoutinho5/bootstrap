@@ -71,7 +71,7 @@
 
 
 					<label for="telefone" class="form-label">digite seu telefone: </label>
-					<input type="tel" class="form-control shadow   bg-body roudend" id="fone" onkeyup="mascara('##-#####-####',this,event,true)" maxlength="1" placeholder="00 00000-0000" >
+					<input type="tel" class="form-control shadow   bg-body roudend" id="fone" placeholder="telefone" required >
 					<p class="form-text">digite seu telefone completo neste campo <p>
 
 
@@ -86,14 +86,14 @@
 						<input type="text" class="form-control shadow   bg-body roudend" id="cidade" placeholder="cidade"required>
 						<p class="form-text">digite sua cidade neste campo <p>
 						<label for="motivo-contato" class="form-label">motivo do contato</label>
-						<select class="form-select shadow  bg-body roudend" id="motivo-contato">
+						<select class="form-select shadow  bg-body roudend" id="motivo-contato requirede">
 							<option>fale conosco</option>
 							<option>reclamacao</option>
 							<option>sugestao</option>
 							<option>elogiar a empresa</option>
 						</select>
 						<label form="caixa-texto" class="form-labeel">olà tudo bem </label>
-						<textarea class="form-control " id="caixa-texto" rows="3"></textarea>
+						<textarea class="form-control " id="caixa-texto" rows="3" required></textarea>
 						<!-- sobre a aula js, para receber o valor depos de digitar, usa-se "onclick" e atribui o valor da funcao.-->
 						<button type="button" onclick="validarFormulario()" class="btn btn-primary">enviar</button>
 				</form>
@@ -105,7 +105,7 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-4">
-				<img src="img/disney.logo.png" id="incriveis"><span class="text-muted ">&copy;2022 programacao web</span>
+				<img src="https://al.senai.br/wp-content/themes/portal_sesisenai/assets/img/SENAIl-02.png" id="incriveis"><span class="text-muted ">&copy;2022 programacao web</span>
 			</div>
 			<div class="col-4">
 				<ul class="nav justify-content-center">
