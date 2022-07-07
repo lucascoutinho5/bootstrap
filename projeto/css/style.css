@@ -31,9 +31,10 @@ transition:transform 1s;
 }
 
 .efeito-img:hover{
-transform:scale(1.1) /*rotateY(360deg)*/;;
+transform:scale(1.1) /*rotateY(360deg)*/;
 cursor:pointer;
 }
+
 .col-efeito{                                                            
 transition:transform 1s;	
 
@@ -80,7 +81,7 @@ text-decoration:underline #FF9A03;
 
 #senai{
 	width:500px;
-	heigth:500px;
+	heigh:500px;
 
 }
 
